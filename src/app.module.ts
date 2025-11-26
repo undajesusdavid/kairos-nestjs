@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { PermissionModule } from './permissions/structure/permission.module';
 import { RoleModule } from './roles/structure/role.module';
 import { UserModule } from './users/structure/user.module';
+import { VocalistModule } from './vocalists/structure/vocalist.module';
 import { DatabaseModule } from './database/database.module';
 import { ConfigModule } from '@nestjs/config';
 
@@ -13,6 +14,7 @@ import { ConfigModule } from '@nestjs/config';
     }),
     DatabaseModule,
     UserModule,
+    VocalistModule,
     PermissionModule, 
     RoleModule, 
     
